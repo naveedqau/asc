@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Area Study Centre (Africa, North & South America) | Quaid-i-Azam University</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts: Playfair Display & Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3, h4, .serif-font { font-family: 'Playfair Display', serif; }
+        .bg-ivy-red { background-color: #8B0000; }
+        .text-ivy-red { color: #8B0000; }
+        .border-ivy-red { border-color: #8B0000; }
+        .bg-ivy-navy { background-color: #1B365D; }
+        .text-ivy-navy { color: #1B365D; }
+        .border-ivy-navy { border-color: #1B365D; }
+        .bg-ivy-gold { background-color: #C5A059; }
+        .text-ivy-gold { color: #C5A059; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 antialiased selection:bg-ivy-red selection:text-white">
+
+    <!-- Top Utility Bar -->
+    <div class="bg-ivy-navy text-white text-xs py-2.5 px-4 border-b border-amber-500/30">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+            <div class="flex items-center space-x-6">
+                <span><i class="fas fa-university text-amber-400 mr-1.5"></i> Quaid-i-Azam University, Islamabad</span>
+                <span class="hidden md:inline"><i class="fas fa-phone-alt text-amber-400 mr-1.5"></i> +92-51-9064-2104 / +92-51-2896006</span>
+                <span class="hidden md:inline"><i class="fas fa-envelope text-amber-400 mr-1.5"></i> director@asc.qau.edu.pk</span>
+            </div>
+            <div class="flex items-center space-x-4">
+                <a href="#academics" class="hover:text-amber-300 transition">Admissions</a>
+                <span>|</span>
+                <a href="#library" class="hover:text-amber-300 transition">Library Portal</a>
+                <span>|</span>
+                <a href="#journals" class="hover:text-amber-300 transition">PJAS Journal</a>
+                <div class="flex space-x-2 ml-2">
+                    <a href="#" class="w-6 h-6 rounded-full bg-white/10 flex items-center justify-center hover:bg-amber-500 hover:text-ivy-navy transition"><i class="fab fa-facebook-f text-[10px]"></i></a>
+                    <a href="#" class="w-6 h-6 rounded-full bg-white/10 flex items-center justify-center hover:bg-amber-500 hover:text-ivy-navy transition"><i class="fab fa-twitter text-[10px]"></i></a>
+                    <a href="#" class="w-6 h-6 rounded-full bg-white/10 flex items-center justify-center hover:bg-amber-500 hover:text-ivy-navy transition"><i class="fab fa-linkedin-in text-[10px]"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navigation Header -->
+    <header class="bg-white shadow-md sticky top-0 z-50 border-t-4 border-ivy-red">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-4">
+                <div class="w-14 h-14 bg-ivy-red rounded-full flex items-center justify-center text-white shadow-inner border-2 border-amber-500 flex-shrink-0">
+                    <span class="serif-font text-2xl font-bold tracking-tighter">ASC</span>
+                </div>
+                <div>
+                    <h1 class="text-xl sm:text-2xl font-bold text-ivy-navy tracking-tight serif-font leading-tight">Area Study Centre</h1>
+                    <p class="text-xs sm:text-sm font-semibold text-ivy-red tracking-wider uppercase">Africa, North &amp; South America • Quaid-i-Azam University</p>
+                </div>
+            </div>
+            
+            <nav class="hidden lg:flex items-center space-x-8 font-medium text-sm">
+                <a href="#home" class="text-ivy-red font-semibold hover:text-ivy-navy transition">Home</a>
+                <a href="#director" class="text-gray-700 hover:text-ivy-red transition">Director's Message</a>
+                <a href="#about" class="text-gray-700 hover:text-ivy-red transition">About</a>
+                <a href="#academics" class="text-gray-700 hover:text-ivy-red transition">Academics</a>
+                <a href="#research" class="text-gray-700 hover:text-ivy-red transition">Research</a>
+                <a href="#library" class="text-gray-700 hover:text-ivy-red transition">Library</a>
+                <a href="#journals" class="text-gray-700 hover:text-ivy-red transition">PJAS Journal</a>
+                <a href="#contact" class="bg-ivy-navy text-white px-4 py-2 rounded shadow hover:bg-ivy-red transition">Contact</a>
+            </nav>
+
+            <div class="lg:hidden">
+                <button id="mobile-menu-btn" class="text-gray-700 focus:outline-none p-2">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Nav Menu -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-white border-t border-gray-200 px-4 pt-2 pb-4 space-y-2">
+            <a href="#home" class="block py-2 text-ivy-red font-semibold">Home</a>
+            <a href="#director" class="block py-2 text-gray-700">Director's Message</a>
+            <a href="#about" class="block py-2 text-gray-700">About Us</a>
+            <a href="#academics" class="block py-2 text-gray-700">Academics</a>
+            <a href="#research" class="block py-2 text-gray-700">Research &amp; Projects</a>
+            <a href="#library" class="block py-2 text-gray-700">Library</a>
+            <a href="#journals" class="block py-2 text-gray-700">PJAS Journal</a>
+            <a href="#contact" class="block py-2 text-ivy-navy font-semibold">Contact Us</a>
+        </div>
+    </header>
+
+    <!-- Hero Banner -->
+    <section id="home" class="relative bg-ivy-navy text-white overflow-hidden py-24 lg:py-32">
+        <div class="absolute inset-0 opacity-15 bg-[radial-gradient(#C5A059_1px,transparent_1px)] [background-size:16px_16px]"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            <div class="lg:col-span-7 space-y-6">
+                <div class="inline-flex items-center space-x-2 bg-amber-500/20 border border-amber-400/40 px-3.5 py-1.5 rounded-full text-amber-300 text-xs font-semibold tracking-wider uppercase">
+                    <i class="fas fa-award"></i> Federal Autonomous Centre • Act No. XLV of 1975
+                </div>
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold serif-font leading-tight">
+                    Center of Excellence in <span class="text-amber-400">American &amp; African Studies</span>
+                </h1>
+                <p class="text-gray-300 text-base sm:text-lg leading-relaxed font-light">
+                    An autonomous academic institute funded by the Ministry of Education through the Higher Education Commission, academically affiliated with the Faculty of Social Sciences at Quaid-i-Azam University, Islamabad.
+                </p>
+                <div class="flex flex-wrap gap-4 pt-4">
+                    <a href="#academics" class="bg-amber-500 hover:bg-amber-600 text-ivy-navy font-bold px-8 py-3.5 rounded shadow-lg transition duration-200">
+                        Degree Programs
+                    </a>
+                    <a href="#director" class="bg-white/10 hover:bg-white/20 border border-white/30 text-white font-medium px-8 py-3.5 rounded backdrop-blur transition duration-200">
+                        Director's Message
+                    </a>
+                </div>
+            </div>
+            
+            <div class="lg:col-span-5">
+                <div class="bg-white/10 backdrop-blur-md p-6 sm:p-8 rounded-xl border border-white/20 shadow-2xl space-y-6">
+                    <h3 class="text-xl font-bold text-amber-300 serif-font border-b border-white/20 pb-3">Notice Board &amp; Updates</h3>
+                    <div class="space-y-4 text-sm">
+                        <div class="border-l-2 border-amber-400 pl-3">
+                            <span class="text-xs text-amber-300 font-semibold">Admissions</span>
+                            <p class="font-medium text-white">M.Phil &amp; Ph.D Admissions in American Studies now open.</p>
+                        </div>
+                        <div class="border-l-2 border-amber-400 pl-3">
+                            <span class="text-xs text-amber-300 font-semibold">Publication</span>
+                            <p class="font-medium text-white">Call for Papers: Pakistan Journal of American Studies (PJAS).</p>
+                        </div>
+                        <div class="border-l-2 border-amber-400 pl-3">
+                            <span class="text-xs text-amber-300 font-semibold">Partnership</span>
+                            <p class="font-medium text-white">U.S.-Pakistan University Partnerships Grants Program (UPGP).</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Statistics Banner -->
+    <section class="bg-ivy-red text-white py-10 shadow-inner">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+            <div class="border-r border-white/20 last:border-none">
+                <div class="text-3xl sm:text-4xl font-extrabold serif-font text-amber-300">1975</div>
+                <div class="text-xs sm:text-sm uppercase tracking-wider font-medium mt-1">Established under Act XLV</div>
+            </div>
+            <div class="border-r border-white/20 last:border-none">
+                <div class="text-3xl sm:text-4xl font-extrabold serif-font text-amber-300">35,000+</div>
+                <div class="text-xs sm:text-sm uppercase tracking-wider font-medium mt-1">Specialized Books</div>
+            </div>
+            <div class="border-r border-white/20 last:border-none">
+                <div class="text-3xl sm:text-4xl font-extrabold serif-font text-amber-300">M.Phil &amp; Ph.D</div>
+                <div class="text-xs sm:text-sm uppercase tracking-wider font-medium mt-1">Academic Programs</div>
+            </div>
+            <div>
+                <div class="text-3xl sm:text-4xl font-extrabold serif-font text-amber-300">PJAS</div>
+                <div class="text-xs sm:text-sm uppercase tracking-wider font-medium mt-1">Refereed Journal</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Director's Message Section -->
+    <section id="director" class="py-20 bg-white border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
+                <h2 class="text-3xl sm:text-4xl font-bold text-ivy-navy serif-font">Message from the Director</h2>
+                <div class="w-20 h-1 bg-amber-500 mx-auto"></div>
+                <p class="text-gray-600">Leading higher research and academic exchange in Area Studies</p>
+            </div>
+
+            <div class="bg-gray-50 rounded-2xl p-8 sm:p-12 border border-gray-200 shadow-md grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                <div class="lg:col-span-4 text-center">
+                    <div class="w-48 h-48 mx-auto bg-ivy-navy rounded-full border-4 border-amber-500 shadow-lg flex items-center justify-center text-white">
+                        <i class="fas fa-user-tie text-7xl text-amber-400"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-ivy-navy serif-font mt-4">Director, ASC</h3>
+                    <p class="text-xs text-ivy-red font-bold uppercase tracking-wider">Area Study Centre, QAU</p>
+                    <p class="text-xs text-gray-500 mt-1">Quaid-i-Azam University, Islamabad</p>
+                </div>
+
+                <div class="lg:col-span-8 space-y-4 text-gray-700 leading-relaxed text-sm sm:text-base">
+                    <div class="text-3xl text-amber-500 font-serif leading-none"><i class="fas fa-quote-left"></i></div>
+                    <p class="italic font-medium text-gray-800">
+                        "Welcome to the Area Study Centre for Africa, North and South America at Quaid-i-Azam University. Since its establishment under the 1975 Act No. XLV, our institution has remained at the forefront of post-graduate research, policy analysis, and academic inquiries regarding the Western Hemisphere and the African continent."
+                    </p>
+                    <p>
+                        Our mission is to foster a deep, objective, and multidisciplinary understanding of the socio-political, economic, and strategic developments shaping North and South America as well as Africa. Through our M.Phil. and Ph.D. programs, international partnerships (including the Ball State University collaboration), and our flagship publication—the <em>Pakistan Journal of American Studies (PJAS)</em>—we equip scholars and researchers to contribute meaningfully to global diplomatic discourse and national policy development.
+                    </p>
+                    <p>
+                        We invite students, visiting scholars, and researchers to explore our extensive research library, participate in our seminars, and collaborate with us in advancing area studies in Pakistan.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
+                <h2 class="text-3xl sm:text-4xl font-bold text-ivy-navy serif-font">Institutional Mandate</h2>
+                <div class="w-20 h-1 bg-amber-500 mx-auto"></div>
+                <p class="text-gray-600">Promoting advanced research and specialized academic understanding</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition">
+                    <div class="w-12 h-12 bg-ivy-red text-white rounded-lg flex items-center justify-center text-xl mb-6 shadow">
+                        <i class="fas fa-gavel"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-ivy-navy serif-font mb-3">1975 Act No. XLV</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        Established as a statutory autonomous body under Act No. XLV of 1975 by the Parliament of Pakistan to promote study and research on foreign regions.
+                    </p>
+                </div>
+
+                <div class="bg-white p-8 rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition">
+                    <div class="w-12 h-12 bg-ivy-navy text-white rounded-lg flex items-center justify-center text-xl mb-6 shadow">
+                        <i class="fas fa-university"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-ivy-navy serif-font mb-3">HEC &amp; Ministry Funded</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        Directly funded by the Federal Ministry of Education through the Higher Education Commission (HEC), guaranteeing high academic standards and resources.
+                    </p>
+                </div>
+
+                <div class="bg-white p-8 rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition">
+                    <div class="w-12 h-12 bg-amber-600 text-white rounded-lg flex items-center justify-center text-xl mb-6 shadow">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-ivy-navy serif-font mb-3">QAU Academic Integration</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        Academically part of Quaid-i-Azam University and affiliated with the Faculty of Social Sciences, awarding M.Phil. and Ph.D. degrees to qualified candidates.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Academic Programs -->
+    <section id="academics" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
+                <h2 class="text-3xl sm:text-4xl font-bold text-ivy-navy serif-font">Academic Programs</h2>
+                <div class="w-20 h-1 bg-amber-500 mx-auto"></div>
+                <p class="text-gray-600">Multidisciplinary postgraduate degrees designed to develop world-class foreign policy and regional analysts.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-gray-50 rounded-xl shadow-sm border border-gray-200 p-8 flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <span class="inline-block bg-ivy-navy/10 text-ivy-navy px-3 py-1 rounded text-xs font-bold uppercase tracking-wider">Master of Philosophy</span>
+                        <h3 class="text-2xl font-bold text-ivy-navy serif-font">M.Phil. in American Studies</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">
+                            A rigorous 2-year program offering specialized courses on U.S. domestic politics, foreign policy, Latin American affairs, African geopolitical studies, and international security.
+                        </p>
+                        <ul class="space-y-2 text-sm text-gray-700 pt-2">
+                            <li><i class="fas fa-check text-ivy-red mr-2"></i> Duration: 2 Years (4 Semesters)</li>
+                            <li><i class="fas fa-check text-ivy-red mr-2"></i> Eligibility: 16 Years Education (MA/BS) in Social Sciences</li>
+                            <li><i class="fas fa-check text-ivy-red mr-2"></i> Coursework + Research Thesis</li>
+                        </ul>
+                    </div>
+                    <div class="pt-6 mt-6 border-t border-gray-200 flex justify-between items-center">
+                        <span class="text-xs text-gray-500 font-semibold uppercase">Affiliated with QAU Social Sciences</span>
+                        <a href="#contact" class="text-ivy-red font-semibold text-sm hover:underline">Inquire Admissions &rarr;</a>
+                    </div>
+                </div>
+
+                <div class="bg-gray-50 rounded-xl shadow-sm border border-gray-200 p-8 flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <span class="inline-block bg-ivy-red/10 text-ivy-red px-3 py-1 rounded text-xs font-bold uppercase tracking-wider">Doctor of Philosophy</span>
+                        <h3 class="text-2xl font-bold text-ivy-navy serif-font">Ph.D. in Area Studies</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">
+                            A premier doctoral program focusing on advanced research in U.S. foreign relations, regional integration in North/South America, and contemporary African political dynamics.
+                        </p>
+                        <ul class="space-y-2 text-sm text-gray-700 pt-2">
+                            <li><i class="fas fa-check text-ivy-red mr-2"></i> Duration: 3 - 5 Years</li>
+                            <li><i class="fas fa-check text-ivy-red mr-2"></i> Eligibility: M.Phil / MS Degree with 3.0+ CGPA</li>
+                            <li><i class="fas fa-check text-ivy-red mr-2"></i> HEC Subject Test / GAT Required</li>
+                        </ul>
+                    </div>
+                    <div class="pt-6 mt-6 border-t border-gray-200 flex justify-between items-center">
+                        <span class="text-xs text-gray-500 font-semibold uppercase">Affiliated with QAU Social Sciences</span>
+                        <a href="#contact" class="text-ivy-red font-semibold text-sm hover:underline">Inquire Admissions &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Library Section -->
+    <section id="library" class="py-20 bg-ivy-navy text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div class="space-y-6">
+                <span class="bg-amber-500/20 border border-amber-400/30 text-amber-300 px-3.5 py-1 rounded text-xs font-semibold uppercase tracking-wider">
+                    Specialized Research Collection
+                </span>
+                <h2 class="text-3xl sm:text-4xl font-bold serif-font leading-tight">The Area Study Centre Library</h2>
+                <p class="text-gray-300 text-base leading-relaxed">
+                    The Centre houses one of the most comprehensive research libraries in South Asia dedicated to American and African studies, containing over 35,000 volumes, international journals, microfilms, and digital database subscriptions.
+                </p>
+                <div class="grid grid-cols-2 gap-4 text-sm pt-2">
+                    <div class="flex items-center space-x-2"><i class="fas fa-check-circle text-amber-400"></i> <span>35,000+ Printed Books</span></div>
+                    <div class="flex items-center space-x-2"><i class="fas fa-check-circle text-amber-400"></i> <span>HEC Digital Library Access</span></div>
+                    <div class="flex items-center space-x-2"><i class="fas fa-check-circle text-amber-400"></i> <span>U.S. Congressional Records</span></div>
+                    <div class="flex items-center space-x-2"><i class="fas fa-check-circle text-amber-400"></i> <span>African Studies Archives</span></div>
+                </div>
+            </div>
+
+            <div class="bg-white/10 p-8 rounded-xl border border-white/20 backdrop-blur-md space-y-6">
+                <h3 class="text-2xl font-bold text-amber-300 serif-font">Library Visiting Hours</h3>
+                <div class="space-y-3 text-sm border-t border-white/20 pt-4">
+                    <div class="flex justify-between"><span>Monday – Thursday:</span><span class="font-semibold text-white">08:00 AM – 04:00 PM</span></div>
+                    <div class="flex justify-between"><span>Friday:</span><span class="font-semibold text-white">08:00 AM – 12:30 PM</span></div>
+                    <div class="flex justify-between"><span>Saturday – Sunday:</span><span class="font-semibold text-red-300">Closed</span></div>
+                </div>
+                <a href="#contact" class="block text-center bg-amber-500 hover:bg-amber-600 text-ivy-navy font-bold py-3 rounded transition shadow mt-4">
+                    Contact Library Desk
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- PJAS Journal Section -->
+    <section id="journals" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
+                <h2 class="text-3xl sm:text-4xl font-bold text-ivy-navy serif-font">Pakistan Journal of American Studies (PJAS)</h2>
+                <div class="w-20 h-1 bg-amber-500 mx-auto"></div>
+                <p class="text-gray-600">A bi-annual peer-reviewed journal publishing research on American politics, society, foreign relations, and Latin American affairs.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-gray-50 border border-gray-200 rounded-xl p-6 flex flex-col justify-between">
+                    <div>
+                        <span class="text-xs font-bold text-ivy-red uppercase">Refereed Journal</span>
+                        <h3 class="text-xl font-bold text-ivy-navy serif-font mt-2 mb-3">Volume 43</h3>
+                        <p class="text-gray-600 text-sm mb-4">Focusing on contemporary shifts in U.S. foreign policy, global trade dynamics, and security relations in South Asia.</p>
+                    </div>
+                    <a href="#contact" class="text-ivy-navy font-semibold text-sm hover:text-ivy-red flex items-center">Download Paper Copies <i class="fas fa-file-pdf ml-2 text-red-600"></i></a>
+                </div>
+
+                <div class="bg-gray-50 border border-gray-200 rounded-xl p-6 flex flex-col justify-between">
+                    <div>
+                        <span class="text-xs font-bold text-ivy-red uppercase">Journal Archives</span>
+                        <h3 class="text-xl font-bold text-ivy-navy serif-font mt-2 mb-3">Back Issues (1983 - Present)</h3>
+                        <p class="text-gray-600 text-sm mb-4">Over four decades of high-impact research articles written by leading international and Pakistani scholars.</p>
+                    </div>
+                    <a href="#contact" class="text-ivy-navy font-semibold text-sm hover:text-ivy-red flex items-center">Browse Archives <i class="fas fa-archive ml-2"></i></a>
+                </div>
+
+                <div class="bg-gray-50 border border-gray-200 rounded-xl p-6 flex flex-col justify-between">
+                    <div>
+                        <span class="text-xs font-bold text-ivy-red uppercase">Call for Submissions</span>
+                        <h3 class="text-xl font-bold text-ivy-navy serif-font mt-2 mb-3">Submit Article</h3>
+                        <p class="text-gray-600 text-sm mb-4">Scholars are invited to submit original, unpublished research manuscripts adhering to HEC guidelines.</p>
+                    </div>
+                    <a href="#contact" class="text-ivy-navy font-semibold text-sm hover:text-ivy-red flex items-center">Submission Guidelines <i class="fas fa-arrow-right ml-2"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Map Section -->
+    <section id="contact" class="py-20 bg-gray-100 border-t border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
+                <h2 class="text-3xl sm:text-4xl font-bold text-ivy-navy serif-font">Contact Information</h2>
+                <div class="w-20 h-1 bg-amber-500 mx-auto"></div>
+                <p class="text-gray-600">Reach out to the Centre for academic, research, or administrative inquiries.</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <div class="bg-white p-8 rounded-xl shadow-md border border-gray-200">
+                    <h3 class="text-2xl font-bold text-ivy-navy serif-font mb-6">Send an Inquiry</h3>
+                    <form onsubmit="event.preventDefault(); alert('Thank you! Your message has been sent to the Area Study Centre administration.');" class="space-y-4">
+                        <div>
+                            <label class="block text-xs font-bold uppercase text-gray-700 mb-1">Full Name</label>
+                            <input type="text" required class="w-full px-4 py-2 border border-gray-300 rounded focus:ring-2 focus:ring-ivy-navy focus:outline-none text-sm">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold uppercase text-gray-700 mb-1">Email Address</label>
+                            <input type="email" required class="w-full px-4 py-2 border border-gray-300 rounded focus:ring-2 focus:ring-ivy-navy focus:outline-none text-sm">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold uppercase text-gray-700 mb-1">Inquiry Topic</label>
+                            <select class="w-full px-4 py-2 border border-gray-300 rounded focus:ring-2 focus:ring-ivy-navy focus:outline-none text-sm">
+                                <option>M.Phil / Ph.D Admissions</option>
+                                <option>Library &amp; Access</option>
+                                <option>PJAS Journal Submission</option>
+                                <option>General Information</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold uppercase text-gray-700 mb-1">Message</label>
+                            <textarea rows="4" required class="w-full px-4 py-2 border border-gray-300 rounded focus:ring-2 focus:ring-ivy-navy focus:outline-none text-sm"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-ivy-navy hover:bg-ivy-red text-white font-bold py-3 rounded transition shadow">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+
+                <div class="space-y-6">
+                    <div class="bg-white p-8 rounded-xl shadow-md border border-gray-200 space-y-6">
+                        <h3 class="text-2xl font-bold text-ivy-navy serif-font">Directory</h3>
+                        <div class="space-y-4 text-sm text-gray-700">
+                            <div class="flex items-start space-x-3">
+                                <i class="fas fa-map-marker-alt text-ivy-red text-lg mt-1"></i>
+                                <div>
+                                    <strong class="block text-ivy-navy">Address:</strong>
+                                    Area Study Centre (Africa, North &amp; South America), Quaid-i-Azam University, Islamabad, 45320, Pakistan.
+                                </div>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <i class="fas fa-phone-alt text-ivy-red text-lg"></i>
+                                <div>
+                                    <strong class="block text-ivy-navy">Phone Numbers:</strong>
+                                    +92-51-9064-2104 / +92-51-2896006-08
+                                </div>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <i class="fas fa-envelope text-ivy-red text-lg"></i>
+                                <div>
+                                    <strong class="block text-ivy-navy">Email Addresses:</strong>
+                                    director@asc.qau.edu.pk / info@asc.qau.edu.pk
+                                </div>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <i class="fas fa-globe text-ivy-red text-lg"></i>
+                                <div>
+                                    <strong class="block text-ivy-navy">Website Domain:</strong>
+                                    asc.qau.edu.pk
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-ivy-navy text-white p-6 rounded-xl shadow-md">
+                        <h4 class="text-lg font-bold text-amber-300 serif-font mb-2">Faculty of Social Sciences</h4>
+                        <p class="text-xs text-gray-300 leading-relaxed">
+                            The Area Study Centre collaborates closely with the Department of International Relations, Department of History, and Department of Defense &amp; Strategic Studies at Quaid-i-Azam University.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-12 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+            <div class="space-y-4 md:col-span-2">
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 bg-ivy-red rounded-full flex items-center justify-center text-white font-bold text-sm border border-amber-500">ASC</div>
+                    <span class="text-white font-bold text-lg serif-font">Area Study Centre (ANSA)</span>
+                </div>
+                <p class="text-xs text-gray-400 leading-relaxed max-w-md">
+                    Quaid-i-Azam University, Islamabad. Established under Act No. XLV of 1975 of the Government of Pakistan. Autonomous institution funded by HEC / Ministry of Education.
+                </p>
+            </div>
+            <div>
+                <h4 class="text-white font-semibold mb-4 text-sm uppercase tracking-wider">Quick Links</h4>
+                <ul class="space-y-2 text-xs">
+                    <li><a href="#director" class="hover:text-amber-400 transition">Director's Message</a></li>
+                    <li><a href="#about" class="hover:text-amber-400 transition">About ASC</a></li>
+                    <li><a href="#academics" class="hover:text-amber-400 transition">Academic Programs</a></li>
+                    <li><a href="#library" class="hover:text-amber-400 transition">Research Library</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-white font-semibold mb-4 text-sm uppercase tracking-wider">Affiliations</h4>
+                <ul class="space-y-2 text-xs">
+                    <li><a href="https://qau.edu.pk" target="_blank" class="hover:text-amber-400 transition">Quaid-i-Azam University</a></li>
+                    <li><a href="https://www.hec.gov.pk" target="_blank" class="hover:text-amber-400 transition">Higher Education Commission</a></li>
+                    <li><a href="#journals" class="hover:text-amber-400 transition">PJAS Journal</a></li>
+                    <li><a href="#contact" class="hover:text-amber-400 transition">Contact Directory</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 border-t border-gray-800 pt-6 flex flex-col sm:flex-row justify-between items-center text-xs">
+            <p>&copy; 2026 Area Study Centre (Africa, North &amp; South America), QAU. All rights reserved.</p>
+            <p class="mt-2 sm:mt-0 text-gray-500">Ivy League Theme Edition</p>
+        </div>
+    </footer>
+
+    <!-- Mobile Navigation Toggle Script -->
+    <script>
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+
+        menu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
